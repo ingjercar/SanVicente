@@ -55,12 +55,6 @@ public class DoctorController : Controller
 
         if (doctor == null)
             return NotFound();
-        
-        var doctors = await _context.Doctors.ToListAsync();
-        
-        if (doctors == null) return NotFound();
-        
-        return View(doctors);
 
         return View(doctor);
     }
