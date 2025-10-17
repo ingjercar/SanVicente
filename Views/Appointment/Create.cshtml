@@ -1,0 +1,36 @@
+@model HospitalSanVicente.Models.Appointment
+
+<h2>Nueva Cita</h2>
+
+<form asp-action="Create" method="post" class="col-md-6">
+    <div class="mb-3">
+        <label>Doctor</label>
+        <select class="form-control" asp-for="DoctorId">
+            <option value="">Seleccione...</option>
+            @foreach (var d in ViewBag.Doctors)
+            {
+                <option value="@d.Id">@d.Name (@d.Specialty)</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label>Paciente</label>
+        <select class="form-control" asp-for="PatientId">
+            <option value="">Seleccione...</option>
+            @foreach (var p in ViewBag.Patients)
+            {
+                <option value="@p.Id">@p.Name (@p.Document)</option>
+            }
+        </select>
+    </div>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+    <div class="mb-3">
+        <label>Fecha y hora</label>
+        <input asp-for="Date" type="datetime-local" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Agendar</button>
+</form>

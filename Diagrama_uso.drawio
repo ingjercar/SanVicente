@@ -1,0 +1,70 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Página-1" id="OV1quCBjqTr-rdkUn5EJ">
+    <mxGraphModel dx="1284" dy="1149" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-45" target="ES2gK7UnHwgSlNOZZF2V-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-45" target="ES2gK7UnHwgSlNOZZF2V-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-45" target="ES2gK7UnHwgSlNOZZF2V-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-45" target="ES2gK7UnHwgSlNOZZF2V-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-45" target="ES2gK7UnHwgSlNOZZF2V-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-45" value="Doctor&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="495" y="680" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-46" value="Eliminar Doctor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="888" width="80" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-47" value="Editar Doctor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="890" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-48" value="Agrgar Doctor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="910" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-49" value="Agendar cita" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="850" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-50" value="Cancelar cita" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="820" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-55" target="ES2gK7UnHwgSlNOZZF2V-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-55" target="ES2gK7UnHwgSlNOZZF2V-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-55" target="ES2gK7UnHwgSlNOZZF2V-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ES2gK7UnHwgSlNOZZF2V-55" target="ES2gK7UnHwgSlNOZZF2V-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-55" value="Cliente" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="280" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-56" value="crear usuario" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="444" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-57" value="Editar usuario" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="434" width="80" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-58" value="Eliminar usurio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="430" width="80" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="ES2gK7UnHwgSlNOZZF2V-59" value="visualizar citas" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

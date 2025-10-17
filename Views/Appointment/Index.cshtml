@@ -1,0 +1,65 @@
+@model IEnumerable<HospitalSanVicente.Models.Appointment>
+
+<div class="container mt-4">
+    <h2 class="mb-3 text-primary">Citas Médicas</h2>
+
+    <div class="mb-3">
+        <a asp-action="Create" class="btn btn-success me-2">Nueva Cita</a>
+        <a asp-controller="Patient" asp-action="Index" class="btn btn-outline-info me-2"> Pacientes</a>
+        <a asp-controller="Doctor" asp-action="Index" class="btn btn-outline-warning"> Doctores</a>
+    </div>
+
+    <table class="table table-hover align-middle">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>Doctor</th>
+                <th>Paciente</th>
+                <th>Especialidad</th>
+                <th>Fecha</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Any())
+            {
+                @foreach (var a in Model)
+                {
+                    <tr class="text-center @(a.State == "Cancelado" ? "table-danger" : "")">
+                        <td>@a.DoctorName</td>
+                        <td>@a.PatientName</td>
+                        <td>@a.Specialty</td>
+                        <td>@a.Date.ToString("g")</td>
+                        <td>
+                            @if (a.State == "Programada")
+                            {
+                                <span class="badge bg-success">@a.State</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">@a.State</span>
+                            }
+                        </td>
+                        <td>
+                            @if (a.State != "Cancelado")
+                            {
+                                <a asp-action="Cancel" asp-route-id="@a.Id" class="btn btn-sm btn-outline-danger" onclick="return confirm('¿Desea cancelar esta cita?');">Cancelar</a>
+                                <a asp-action="Delete" asp-route-id="@a.Id" class="btn btn-sm btn-outline-danger" onclick="return confirm('¿Desea Eliminar esta cita?');">Delete</a>
+                            }
+                            else
+                            {
+                                <span class="text-muted">—</span>
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted">No hay citas registradas.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

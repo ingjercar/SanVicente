@@ -1,0 +1,70 @@
+@model HospitalSanVicente.Models.Doctor
+
+<h1>Editar pasajero</h1>
+
+<div class="col-md-4">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <form asp-action="Edit" method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="mt-3">
+                    <label asp-for="Name"></label>
+                    <input class="form-control" asp-for="Name" />
+                </div>
+
+                <div class="mt-3">
+                    <label asp-for="Document"></label>
+                    <input class="form-control" asp-for="Document" />
+                </div>
+
+                <div class="mt-3">
+                    <label asp-for="Specialty"></label>
+                    <input class="form-control" asp-for="Specialty" />
+                </div>
+
+                <div class="mt-3">
+                    <label asp-for="Phone"></label>
+                    <input class="form-control" asp-for="Phone" />
+                </div>
+                
+                <div class="mt-3">
+                    <label asp-for="Email"></label>
+                    <input class="form-control" asp-for="Email" />
+                </div>                
+                
+                <hr>
+                <button type="submit" class="btn btn-primary w-100"
+                        onclick="alert('editado con Éxito')">
+                    Save Data
+                </button>
+
+                <span class="text-success">@ViewData["Message"]</span>
+            </form>
+        </div>
+    </div>
+</div>
+
+<table class="table ">
+    <thead class="table-dark">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Document</th>
+        <th>Specialty</th>
+        <th>Phone</th>
+        <th>Email</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>@Model.Id</td>
+        <td>@Model.Name</td>
+        <td>@Model.Document</td>
+        <td>@Model.Specialty</td>
+        <td>@Model.Phone</td>
+        <td>@Model.Email</td>
+    </tr>
+    </tbody>
+</table>
