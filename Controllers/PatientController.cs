@@ -30,7 +30,7 @@ public class PatientController : Controller
         bool docExists = await _context.Patients.AnyAsync(p => p.Document == patient.Document);
         if (docExists)
         {
-            ModelState.AddModelError("Document", "Ya existe un paciente con este documento.");
+            ModelState.AddModelError("", "Ya existe un paciente con este documento.");
             var patients = await _context.Patients.ToListAsync();
             return View("Index", patients); // vuelve al Index con el error
         }
